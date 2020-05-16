@@ -1,161 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon-cocktail.png" />
+    <title>20/20 CoC</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/icon-cocktail.png">
-	<title>20/20 CoC</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <p id="logo">20/20 CoC</p>
+        <ul class="navi">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#store">STORE</a></li>
+          <li><a href="#contacts">CONTACTS</a></li>
+          <li><a href="#about-us">ABOUT US</a></li>
+        </ul>
+      </nav>
 
-<body>
-	<header>
-		<h1>20/20 CoC</h1>
+      <!-- <img width="200" src="img/background.jpg" alt="home bar" /> -->
+      <div class="background-photo">
+        <div class="background-photo-text">
+          <h1>COCKTAIL TO GO</h1>
+          <p id="head">Easy Natural Coctails At Home</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>WHAT ARE YOU IN THE MOOD FOR?</h2>
+      <p id="mood">
+        Just like a bar, you get to choose the drink(s) you’re in the mood for.
+        Pick what sounds good and then we’ll ship you the related 1pt Infusion
+        Blend(s) (enough for 6+ cocktails each), and simple recipe(s) right to
+        your door! With the addition of simple kitchen ingredients, you can
+        easily make bar-worthy infused cocktails right at home.
+      </p>
+      <hr />
 
-		<nav>
-			<a href="#">HOME</a>
-			<a href="#store">STORE</a>
-			<a href="#contacts">CONTACTS</a>
-			<a href="#about-us">ABOUT US</a>
-		</nav>
+      <h2 id="store">CHOOSE YOUR FAVORITE</h2>
+      <div class="all-cocktails">
+        <div class="cocktails-card">
+          <div class="cocktails-card-product">
+            <figure>
+              <img
+                id="old_fashioned"
+                src="img/oldfashioned.jpg"
+                alt="old fashioned"
+              />
+              <figcaption>
+                OLD FASHIONED <br />
+                11$
+              </figcaption>
+            </figure>
 
-		<img width="200" src="img/backgroung1.jpg" alt="home bar" />
+            <button class="buy">BUY</button>
+          </div>
+          <p>
+            Infused notes of wood and leather with subtle hints of island spices
+            spin liquid gold out of even the plainest of blanco tequilas for
+            this sophisticated twist on a cocktail classic. Class it up with a
+            reposado, but you won't need to.
+          </p>
+        </div>
+        <div class="cocktails-card">
+          <div class="cocktails-card-product">
+            <figure>
+              <img id="mint_julep" src="img/mintjulep.jpg" alt="mint julep" />
+              <figcaption>
+                MINT YULEP <br />
+                11$
+              </figcaption>
+            </figure>
+            <button class="buy">BUY</button>
+          </div>
+          <p>
+            A perfect peppery pairing: ginger and Irish whiskey. This cocktail
+            is proof positive that the subtlest of changes can achieve amazing
+            results. One of our all-time team favorites, and nothing more than a
+            bit of ginger, elderflower, lemon, and the natural brittle elegance
+            of Ireland's finest. Sláinte is Táinte!
+          </p>
+        </div>
+        <div class="cocktails-card">
+          <div class="cocktails-card-product">
+            <figure>
+              <img
+                id="jin_for_the_win"
+                src="img/jinforthewin.JPEG"
+                alt="jin for the win"
+              />
+              <figcaption>
+                JIN FORTHE WIN <br />
+                11$
+              </figcaption>
+            </figure>
+            <button class="buy">BUY</button>
+          </div>
+          <p>
+            Elegant and refined. This easy-as-it-gets two part cocktail belies
+            the flavor complexity building beneath the surface. The crackling
+            crispness of a piney gin combines with a melange of bitter
+            Mediterranean citrus activated by the floral tang of hibiscus.
+            Perfect for (imagining) sunset cocktails in Capri.
+          </p>
+        </div>
+      </div>
 
-		<h2>COCTAIL TO GO</h2>
-		<p id="head">Easy Natural Coctails At Home</p>
-	</header>
-	<main>
-		<h2>WHAT ARE YOU IN THE MOOD FOR?</h2>
-		<p>
-			Just like a bar, you get to choose the drink(s) you’re in the mood for.
-			Pick what sounds good and then we’ll ship you the related 1pt Infusion
-			Blend(s) (enough for 6+ cocktails each), and simple recipe(s) right to
-			your door! With the addition of simple kitchen ingredients, you can easily
-			make bar-worthy infused cocktails right at home.
-		</p>
-		<hr />
+      <hr />
+      <h2 id="about-us">HOW TO USE IT?</h2>
+      <div id="about-card">
+        <p>
+          When you order from us, we already have ready-made cocktails that are
+          mixed for 72 hours and aged in a special device, then we pour it into
+          glass bottles (the price is already included), pack in 200 ml bottles
+          and send it directly under the door.
+        </p>
+        <img id="bottle" src="img/bottle.jpg" alt="bottle" />
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <h2>CONTACTS</h2>
+      <div id="contacts">
+        <div id="street-adress">
+          <p>Lviv,</p>
+          <p>Uhorska street,222</p>
+          <p>82000</p>
+          <p>+3808080808</p>
+        </div>
 
-		<h2 id="store">CHOOSE YOUR FAVORITE</h2>
-		<div id="cocktails">
-			<div class="old-fashioned">
-				<figure>
-					<img
-          width="200"
-          id="old_fashioned"
-          src="img/oldfashioned.jpg"
-          alt="old fashioned"
-        />
-					<figcaption>
-						OLD FASHIONED 11$
-					</figcaption>
-				</figure>
+        <div id="social-links">
+          <a id="facebook" href="https://www.facebook.com/mishaaalysak">
+            <p>facebook</p>
+          </a>
 
-				<button>BUY</button>
-			</div>
-			<p>
-				Infused notes of wood and leather with subtle hints of island spices
-				spin liquid gold out of even the plainest of blanco tequilas for this
-				sophisticated twist on a cocktail classic. Class it up with a reposado,
-				but you won't need to.
-			</p>
-			<div class="mint-julep">
-				<figure>
-					<img
-          width="200"
-          id="mint_julep"
-          src="img/mintjulep.jpg"
-          alt="mint julep"
-        />
-					<figcaption>
-						MINT YULEP 11$
-					</figcaption>
-				</figure>
-				<button>BUY</button>
-			</div>
-			<p>
-				A perfect peppery pairing: ginger and Irish whiskey. This cocktail is
-				proof positive that the subtlest of changes can achieve amazing results.
-				One of our all-time team favorites, and nothing more than a bit of
-				ginger, elderflower, lemon, and the natural brittle elegance of
-				Ireland's finest. Sláinte is Táinte!
-			</p>
-			<div class="jin-for-the-win">
-				<figure>
-					<img
-          width="200"
-          id="jin_for_the_win"
-          src="img/jinforthewin.JPEG"
-          alt="jin for the win"
-        />
-					<figcaption>
-						JIN FORTHE WIN 11$
-					</figcaption>
-				</figure>
-				<button>BUY</button>
-			</div>
-			<p>
-				Elegant and refined. This easy-as-it-gets two part cocktail belies the
-				flavor complexity building beneath the surface. The crackling crispness
-				of a piney gin combines with a melange of bitter Mediterranean citrus
-				activated by the floral tang of hibiscus. Perfect for (imagining) sunset
-				cocktails in Capri.
-			</p>
-		</div>
-		<hr />
-		<h2 id="about-us">HOW TO USE IT?</h2>
-		<p>
-			When you order from us, we already have ready-made cocktails that are
-			mixed for 72 hours and aged in a special device, then we pour it into
-			glass bottles (the price is already included), pack in 200 ml bottles and
-			send it directly under the door.
-		</p>
-		<img width="200" src="img/bottle.jpg" alt="bottle" />
-</main>
-		<footer>
-			<hr />
-			<h2 id="contacts">CONTACTS</h2>
+          <a id="twitter" href="https://www.instagram.com/misha_lysak/">
+            <p>twitter</p>
+          </a>
 
-			<p>Lviv,</p>
-			<p>Uhorska street,222</p>
-			<p>82000</p>
-			<p>+3808080808</p>
-			<a href="https://www.facebook.com/groups/260103998456660/">
-				<p>facebook</p>
-			</a>
+          <a id="google" href="pandakukukuk@gmail.com">
+            <p>google+</p>
+          </a>
+        </div>
+      </div>
 
-			<a href="https://www.facebook.com/groups/260103998456660/">
-				<p>twitter</p>
-			</a>
+      <form action="https://formspree.io/mlewqqaq" method="POST">
+        <div class="form">
+          <label id="name-label" for="name">Name:</label>
+          <div class="name-form">
+            <input id="name" type="text" name="name" placeholder="Your Name" />
+          </div>
+          <br />
+          <label id="adress-label" for="address">Address:</label>
+          <div class="adress-form">
+            <input
+              id="address"
+              type="text"
+              name="address"
+              placeholder="Your Address"
+            />
+          </div>
 
-			<a href="https://www.facebook.com/groups/260103998456660/">
-				<p>google+</p>
-			</a>
-
-			<form action="https://formspree.io/mlewqqaq" method="POST">
-				<label for="name">Name:</label>
-				<input id="name" type="text" name="name" placeholder="Your Name" />
-				<label for="address">Address:</label>
-				<input
-        id="address"
-        type="text"
-        name="address"
-        placeholder="Your Address"
-      />
-				<label for="textarea">Write smth:</label>
-				<p>
-					<textarea
-          name="textarea"
-          id="textarea"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-				</p>
-				<input type="submit" value="S E N D" />
-    </form>
-				<hr />
-				<p>powered by power</p>
-		</footer>
-</body>
-
+          <label id="text-area-label" for="textarea">Write smth:</label>
+          <div class="text-area-form">
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+        </div>
+        <input id="send" type="submit" value="S E N D" />
+      </form>
+      <hr />
+      <p id="power">powered by power</p>
+    </footer>
+  </body>
 </html>
