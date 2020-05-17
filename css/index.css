@@ -6,7 +6,6 @@
   scroll-behavior: smooth;
   font-family: "Muli", sans-serif;
   margin: auto;
-  padding: auto;
   max-width: 1200px;
 }
 
@@ -18,7 +17,6 @@ nav {
 #logo {
   display: block;
   margin: auto;
-  padding: auto;
   width: 100%;
 }
 
@@ -48,12 +46,10 @@ nav {
 
 body {
   margin: auto;
-  padding: auto;
 }
 
 ul nav {
   margin: 0;
-  padding: 1;
 }
 
 header nav .navi {
@@ -157,7 +153,9 @@ p {
 }
 
 #bottle {
-  display: box;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 300px;
   width: 100%;
 }
