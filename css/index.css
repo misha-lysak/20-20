@@ -43,7 +43,7 @@ nav {
 .navi a:hover {
   color: rgb(219, 152, 113);
   text-decoration: underline;
-  transition: .4s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 body {
@@ -110,7 +110,7 @@ main .all-cocktails img {
 @media (min-width: 500px) {
   .all-cocktails {
     display: grid;
-    grid-template-colum1ns: 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
   }
 }
@@ -142,6 +142,8 @@ main .all-cocktails img {
 .cocktails-card {
   max-width: 350px;
   display: grid;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -280,11 +282,17 @@ h2 {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
+  color: white;
+  background-color: rgb(89, 80, 79);
   max-width: 200px;
   width: 100%;
   height: 40px;
   border-radius: 10px;
+}
+
+#send:hover {
+  color: orangered;
+  cursor: pointer;
 }
 
 #text-area {
@@ -484,4 +492,12 @@ h2 {
 .modal-body input {
   max-width: 230px;
   width: 100%;
+}
+
+#location-png {
+  width: 20px;
+}
+
+#phone-png {
+  width: 20px;
 }
