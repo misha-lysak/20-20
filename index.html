@@ -55,7 +55,7 @@
               </figcaption>
             </figure>
 
-            <button class="buy">BUY</button>
+            <button class="buy" id="buy-old">BUY</button>
           </div>
           <p>
             Infused notes of wood and leather with subtle hints of island spices
@@ -73,7 +73,7 @@
                 11$
               </figcaption>
             </figure>
-            <button class="buy">BUY</button>
+            <button class="buy" id="buy-mint">BUY</button>
           </div>
           <p>
             A perfect peppery pairing: ginger and Irish whiskey. This cocktail
@@ -96,7 +96,7 @@
                 11$
               </figcaption>
             </figure>
-            <button class="buy">BUY</button>
+            <button class="buy" id="buy-jin">BUY</button>
           </div>
           <p>
             Elegant and refined. This easy-as-it-gets two part cocktail belies
@@ -107,7 +107,66 @@
           </p>
         </div>
       </div>
+      <div class="modal" id="my-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Shop</h2>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/mlewqqaq" method="POST">
+              <div class="form-modal">
+                <div class="name-form-modal">
+                  <label id="name-label-modal" for="name-form-modal">Name:</label>
+                  <input
+                    id="name-form-modal"
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="surname-form-modal">
+                  <label id="surname-label" for="surname-form-modal"
+                    >Surname:</label
+                  ><br>
+                  <input
+                    id="surname-form-modal"
+                    type="text"
+                    name="surname"
+                    placeholder="Your Surname"
+                  />
+                </div>
+                <div class="email-form-modal">
+                  <label id="email-label" for="email-form-modal">Email:</label><br>
+                  <input
+                    id="email-form-modal"
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                  />
+                </div>
 
+                <div class="text-area-modal">
+                  <label id="text-area-label-modal" for="text-area-modal"
+                    >Your wish:</label
+                  ><br>
+                  <textarea
+                    name="textarea"
+                    id="text-area-modal"
+                    cols="30"
+                    rows="5"
+                    placeholder="Your Wish"
+                  ></textarea>
+                </div>
+                <input id="send-modal" type="submit" value="S E N D" />
+              </div><br>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <p>thanks for your order !</p>
+          </div>
+        </div>
+      </div>
       <hr />
       <h2 id="about-us">HOW TO USE IT?</h2>
       <div id="about-card">
@@ -179,5 +238,7 @@
       <hr />
       <p id="power">powered by power</p>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>

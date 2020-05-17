@@ -42,6 +42,8 @@ nav {
 
 .navi a:hover {
   color: rgb(219, 152, 113);
+  text-decoration: underline;
+  transition: .4s ease-in-out;
 }
 
 body {
@@ -270,6 +272,9 @@ h2 {
 }
 
 #send {
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -294,10 +299,14 @@ h2 {
 }
 
 .buy {
+  border: 1px;
+  text-decoration: none;
   width: 70%;
+  height: 30px;
   border-radius: 5px;
   background-color: #2f2538;
   color: #ffffff;
+  font-weight: bold;
 }
 
 @media (max-width: 660px) {
@@ -346,4 +355,133 @@ h2 {
   header #head {
     font-size: 1.5rem;
   }
+}
+
+.buy:hover {
+  border: 1px;
+  text-decoration: none;
+  background-color: #811C05;
+  color: black;
+
+}
+
+/* modal */
+
+.modal {
+  display: none;
+  z-index: 1;
+  overflow: auto;
+  position: fixed;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: rgb(28, 6, 6);
+  animation-name: animate;
+  animation-duration: 0.5s;
+  margin: auto;
+  padding: 0;
+  width: 70%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  float: right;
+}
+
+.close:hover,
+.close:focus {
+  color: orangered;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(58, 41, 41);
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 5px 5px;
+  color: white;
+}
+
+#send-modal {
+  border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30px;
+}
+
+#send-modal:hover {
+  color: #811C05;
+  background-color: rgb(61, 14, 4);
+}
+
+.form-modal {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.modal-body input {
+  max-width: 230px;
+  width: 100%;
 }
