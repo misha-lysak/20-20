@@ -123,6 +123,7 @@
                     type="text"
                     name="name"
                     placeholder="Your Name"
+                    required
                   />
                 </div>
                 <div class="surname-form-modal">
@@ -134,6 +135,7 @@
                     type="text"
                     name="surname"
                     placeholder="Your Surname"
+                    required
                   />
                 </div>
                 <div class="email-form-modal">
@@ -143,6 +145,7 @@
                     type="email"
                     name="email"
                     placeholder="Your Email"
+                    required
                   />
                 </div>
 
@@ -210,16 +213,17 @@
         <div class="form">
           <label id="name-label" for="name">Name:</label>
           <div class="name-form">
-            <input id="name" type="text" name="name" placeholder="Your Name" />
+            <input id="name" type="text" name="name" placeholder="Your Name" required />
           </div>
           <br />
           <label id="adress-label" for="address">Address:</label>
           <div class="adress-form">
             <input
               id="address"
-              type="text"
+              type="email"
               name="address"
               placeholder="Your Address"
+              required
             />
           </div>
 
